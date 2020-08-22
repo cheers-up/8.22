@@ -1,0 +1,240 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: Helvetica, Arial, Microsoft YaHei, sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #333;
+  background-color: #fff;
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  color: #e2c8ca; }
+
+li {
+  list-style: none; }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+element.style {
+  display: block; }
+
+.login_yonghuming {
+  display: none; }
+
+.overTip {
+  width: 450px;
+  height: auto;
+  _overflow: visible;
+  visibility: visible; }
+
+.overTip, .overWin h3 {
+  padding: 0;
+  margin: 0;
+  overflow: visible; }
+
+user agent stylesheet
+div {
+  display: block; }
+
+body, html, input {
+  font-size: 12px;
+  line-height: 150%;
+  font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Noto Sans CJK SC,Lantinghei SC,Microsoft YaHei,WenQuanYi Micro Hei,Arial,sans-serif;
+  color: #333; }
+
+.loginWrap {
+  width: 450px;
+  height: 341px;
+  background: #F7F7F6;
+  line-height: 150%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+.login-inner {
+  padding: 40px 0 30px 0px;
+  position: relative; }
+
+.loginWrap img {
+  position: absolute;
+  width: 62px;
+  height: 62px;
+  top: 12px;
+  right: 12px; }
+  .loginWrap img img {
+    width: 100%;
+    height: 100%; }
+
+.login {
+  margin: 0 50px; }
+
+.loginWrap .login:first-child {
+  width: 350px;
+  height: 35px; }
+  .loginWrap .login:first-child h1 {
+    float: left;
+    font-size: 30px;
+    height: 35px;
+    line-height: 35px;
+    color: #666;
+    font-weight: 500;
+    overflow: hidden; }
+  .loginWrap .login:first-child span a {
+    float: right;
+    margin-top: 15px;
+    color: #999; }
+  .loginWrap .login:first-child span a:hover {
+    color: #000; }
+
+.inputWrap {
+  float: left;
+  padding-top: 15px;
+  width: 350px;
+  height: 260px; }
+  .inputWrap .input-1 {
+    box-sizing: border-box;
+    padding-left: 18px;
+    line-height: 38px;
+    font-size: 14px;
+    width: 100%;
+    height: 38px;
+    border: 1px solid #ccc; }
+  .inputWrap .input-1:nth-child(1) {
+    border-bottom: none; }
+
+.inputuser {
+  top: 91px;
+  right: 68px; }
+
+.inputuser, .inputpass {
+  position: absolute;
+  background: #fff;
+  width: 84px;
+  height: 36px;
+  font-size: 14px;
+  line-height: 38px;
+  color: #D13333; }
+
+.inputpass {
+  top: 129px;
+  right: 68px; }
+
+.loginWrap .input-2 {
+  width: 350px;
+  height: 17px;
+  margin-top: 10px; }
+  .loginWrap .input-2 .input-left {
+    float: left; }
+    .loginWrap .input-2 .input-left span {
+      margin: 0px 0px 0px 5px;
+      color: #999; }
+  .loginWrap .input-2 a {
+    color: #999;
+    float: right; }
+  .loginWrap .input-2 a:hover {
+    color: #000; }
+  .loginWrap .input-2 input[type="checkbox"] {
+    position: relative;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #e6e6e6;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background-color: #fff;
+    vertical-align: middle; }
+
+.submitWrap {
+  margin-top: 20px;
+  border: none;
+  text-align: center; }
+  .submitWrap input {
+    background: #8c222c;
+    width: 350px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 3px;
+    letter-spacing: 10px; }
+
+.input-3 {
+  width: 100%;
+  float: left;
+  margin-top: 20px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px; }
+  .input-3 li {
+    float: left;
+    margin-right: 27px; }
+    .input-3 li a {
+      text-align: center;
+      color: #666; }
+      .input-3 li a span {
+        margin-right: 1px; }
+  .input-3 li:nth-child(1) {
+    border-radius: 3px;
+    width: 50px;
+    height: 24px;
+    background: #77a877;
+    padding-left: 12px; }
+    .input-3 li:nth-child(1) a {
+      color: #fff; }
+  .input-3 li:nth-child(3) {
+    margin-right: 50px; }
+  .input-3 li:nth-child(5) {
+    float: right;
+    margin-right: 0px; }
+    .input-3 li:nth-child(5) a {
+      color: #bf7f5F; }
