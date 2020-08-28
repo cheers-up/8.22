@@ -17,8 +17,12 @@ a {
 .foot,
 .head,
 .nav {
-  width: 1000px;
+  width: 1200px;
   margin: 0 auto;
+}
+.content-box{
+  height: 100%;
+  width: 100%;
 }
 .nav-header-box .header-wrap .user-info-box .item-info .line-right-test,
 .nav-header-box .header-wrap .user-info-box .item-info .login-win .line-left,
@@ -44,9 +48,10 @@ a {
 .nav-header-box {
   height: 36px;
   background-color: #8c222c;
+  width: 100%;
   .header-wrap {
     position: relative;
-    width: 1000px;
+    width: 1200px;
     height: 100%;
     margin: 0 auto;
     .slogan-box {
@@ -168,6 +173,7 @@ a {
   }
 }
 .header-search-box {
+  width: 100%;
   background: #fff;
 }
 .index {
@@ -175,7 +181,7 @@ a {
 }
 .header-search {
   position: relative;
-  width: 1000px;
+  width: 1200px;
   height: 100px;
   margin: 0 auto;
   padding-top: 31px;
@@ -288,7 +294,7 @@ a {
 
 }
 .user-info-box .item-info .owerWrap{
-  display: block;
+  display: none;
   position: absolute;
   top: 36px;
   left: 250px;
@@ -317,6 +323,7 @@ a {
 }
 .help .header-search {
   width: 950px;
+  // padding-bottom: 20px;;
 }
 .header-search .logo-text {
   position: absolute;
@@ -346,6 +353,9 @@ a {
   height: 32px;
   margin-right: 0;
 }
+.header-search{
+  height: 100px;
+}
 .search-box * {
   font-size: 12px;
   height: 40px;
@@ -356,7 +366,7 @@ a {
 .header-search .search-box .search-con {
   position: relative;
   float: left;
-  width: 588px;
+  width: 688px;
   height: 40px;
   line-height: 36px;
   border: 2px solid #8c222c;
@@ -431,7 +441,7 @@ form {
 .header-search .search-box .search-con .search-input-box {
   position: relative;
   float: left;
-  width: 496px;
+  width: 596px;
   height: 28px;
   background: #fff;
   .search-status-box:before {
@@ -445,7 +455,7 @@ form {
     background-color: #ccc;
   }
   input {
-    width: 496px;
+    width: 596px;
     height: 28px;
     padding: 10px 84px 10px 10px;
     line-height: 18px;
@@ -466,7 +476,7 @@ form {
 .header-search .search-box .search-con .search-input-box {
   position: relative;
   float: left;
-  width: 496px;
+  width: 596px;
   height: 28px;
   background: #fff;
 }
@@ -519,12 +529,13 @@ form {
 }
 .hotwords-list {
   color: #7c7c7c;
-  width: 600px;
+  width: 720px;
   height: 18px;
   line-height: 18px;
   font-size: 12px;
   overflow: hidden;
   margin-top: 6px;
+  clear: both;
   .hotwords-item {
     float: left;
     margin-right: 16px;
@@ -571,7 +582,7 @@ form {
 .foot,
 .head,
 .nav {
-  width: 1000px;
+  width: 1200px;
   margin: 0 auto;
 }
 .main-left {
@@ -582,7 +593,8 @@ form {
   width: 180px;
 }
 .main-right {
-  width: 810px;
+  width: 1000px;
+  height: auto;
 }
 .f-left {
   float: left;
@@ -594,10 +606,7 @@ form {
 img {
   border: none;
 }
-.main-right {
-  width: 810px;
-  height: auto;
-}
+
 .main-right .bannerWrap {
   width: 100%;
   height: 270px;
@@ -690,7 +699,7 @@ img {
     }
   }
 }
-.main-left .book-list ul{
+.main-left .book-list ul,.book-list-2 ul{
   
   background: #fff;
   .active-left-list{
@@ -734,11 +743,11 @@ img {
 }
 
 }
-.main-left .book-list a{
+.main-left .book-list a,.book-list-2 a{
   color: #333;
   font-size: 12px;
 }
-.main-left .book-list a:hover{
+.main-left .book-list a:hover,.book-list-2 a:hover{
   color: #8c222c;
   font-size: 12px;
   text-decoration: underline;
@@ -752,7 +761,7 @@ img {
   margin-bottom: -1px;
   
 }
-.main-left .book-list{
+.main-left .book-list,.book-list-2{
   .book-list-top{
     background: #8c222c;
     width: 180px;
@@ -783,8 +792,8 @@ img {
   }
 }
 
-.book-list-title .book-list-panel {
-  display: none;
+.book-list-title .book-list-panel,.book-list-title-2 .book-list-panel {
+  // display: none;
   width: 822px;
   height: 439px;
   position: absolute;
@@ -822,33 +831,38 @@ span{
   }
 }  
 }
+.book-list-title-2 .book-list-panel{
+  display: none;
+  left: 178px;
+  top: 437px;
+  height: 288px;
+
+  h1{
+    float: left;
+  }
+  .book-list-details{
+  padding-left: 68px;
+  margin-bottom: 40px;
+  height: 20px;
+  line-height: 20px;
+}
+}
 .book-list-panel-none{
   display: none;
 }
 .gallery-book-list-Wrap{
+  width: 1010px;
   padding-left: 10px;
 }
-.gallery-book-list{
+
+.book-list-top-2 p{
   width: 100%;
-  height: 22px;
-  margin-bottom: 25px;
-  margin-top: 20px;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 34px;
-  span{
-    font-size: 18px;
-    left: 20px;
-    top: 12px;
-    color: #333;
-    font-weight: 700;
-  }
-  span+i{
-    font-size: 14px;
-    color: #999;
-    font-weight: 400;
-  }
-  i+a{
-    font-size: 12px;
-    color: #0057a0;
-  }
+  background: #8c222c;
+  
+}
+.main-left .book-list-title-1{
+  display: block;
+}
+.book-list-title-2{
+  display: block;
 }

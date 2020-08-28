@@ -1,0 +1,35 @@
+.footer-wrap{
+    width: 100%;
+    z-index: 10;
+    height: 50px;
+    color: #999;
+    background-color: #fff;
+    overflow: hidden;
+  
+  .foot-box{
+    margin: 0 auto;
+    height: 50px;
+    width: 1000px;
+    font-size: 12px;
+    padding: 10px 0 20px;
+    border-top: 1px solid #e5e5e5;
+    p{
+      float: left;
+      color: #999;
+    }
+    ul{
+      float: right;
+      li{
+        margin-left: 13px;
+        float: left;
+      }
+      a{
+        color: #8999a9;
+        font-size: 12px;
+      }
+      a:hover{
+        color: #333;
+      }
+    }
+  }
+  }

@@ -1,0 +1,193 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Document</title><link rel="stylesheet" href="css/shopping.min.css"><link rel="stylesheet" href="css/iconfont.css"><script src="./js/jquery-1.11.3.js"></script><script src="./js/jquery.cookie.js"></script></head><body><div class="mainWrap"><div class="headerWrap"><div class="header-nav"><ul class="nav-left"><li><a href="">首页</a></li><li><a href="">书店区</a></li><li><a href="">书摊区</a></li><li><a href="">新书</a></li><li><a href="">在线拍卖</a></li><li><a href="">艺术品专场</a></li></ul><div class="user-info-box clearfix" id="user-info-box"><div class="item-info login-win" id="login-win"><span id="nickName" class="info-normal"><span class="info-text">登录</span> <span class="info-text">/</span> <span class="info-text">注册</span> </span><!-- 顶部隐藏 --><!-- 登陆注册 --><div class="login-win-Wrap" id="login-win-Wrap"><p><a href="login.html">登&nbsp;&nbsp;&nbsp;&nbsp;录</a></p><p><a href="login.html">免费注册</a></p><span>其他方式</span><ul><li><a href=""></a><span style="color:#77a877;" class="iconfont icon-weixinfang"></span><i>&nbsp微信</i></li><li><a href=""></a><span style="color:#51aeca;" class="iconfont icon-QQfang"></span><i>&nbspQQ</i></li><li><a href=""></a><span style="color:#d86070;" class="iconfont icon-weibo3"></span><i>微博</i></li></ul></div></div><div class="item-info message-win"><a id="msgNum" href="http://message.kongfz.com/Index/myMessage/#inbox" class="info-link msg-normal" target="_blank" rel="nofollow"><!-- <span class="iconfont icon-xiaoxi un-read-style"></span>
+									<span class="info-text un-read-style"
+										>未读消息 <span id="unReadNum" class="num"></span
+									></span> --> <span class="info-text normal-style">消息</span></a></div><div class="item-info" id="shop-list-Wrap"><a id="cartLink" href="http://cart.kongfz.com/list" class="info-link" target="_blank" rel="nofollow"><span style="color:#8c222c;" class="iconfont icon-gouwuche"></span> <span class="info-text">购物车 <span id="cartNum" class="num"></span></span> </a><!-- 购物车 --><div class="shop-Wrap" id="shopWrap"><span>最近加入的商品：</span><ul class="shopping-wrap"><!-- <li><img src="https://www.kfzimg.com/sw/kfzimg/1983/0187b7771a4584b38a_s.jpg" alt="">
+											<a href="">古音汇纂</a>
+											<div class="sp-right">
+											<div class="price">￥823.00</div>
+											<div class="delete">删除</div>
+											</div>
+										</li> --></ul></div></div><div class="item-info"><a href="http://shop.kongfz.com/buyer/order/order_list.html" class="info-link" target="_blank" rel="nofollow"><span class="info-text">我的订单</span></a></div><div class="item-info" id="ower-wrap"><a href="http://user.kongfz.com/" class="info-link" target="_blank" rel="nofollow"><span class="info-text">个人中心</span> </a><!-- 个人中心 --><div class="owerWrap" id="owerWrap"><p><span class="iconfont icon-dianpu"></span>店铺</p><span><a href="">我的订单</a></span> <span><a href="">收藏</a></span><p><span class="iconfont icon-paimai"></span>拍卖</p><span><a href="">拍卖交易</a></span> <span><a href="">我的竞价</a></span> <span><a href="">收藏</a></span><p></p><span><a href="">我的好友</a></span> <span><a href="">资金账户</a></span></div></div><div class="item-info"><a href="http://shop.kongfz.com/seller/" class="info-link" target="_blank" target="_blank"><span class="info-text">卖家中心</span></a></div><div class="item-info"><span class="info-normal"><span class="info-text">客服</span></span></div><div class="item-info mobile-win"><span class="info-normal"><a href="https://m.kongfz.com/" class="info-link" target="_blank"><span class="info-text">手机版</span> </a></span><span class="line-right-test">|</span></div><!-- <div class="item-info login-win">
+																<span class="line-left">|</span>
+																<span class="line-right">|</span>
+																<span id="nickName" class="info-normal">
+																		<span class="info-text">登录</span>
+																		<span class="info-text">/</span>
+																		<span class="info-text">注册</span>
+																</span>
+														</div> --><div class="item-info area-win login-win dest"><span class="info-normal"><span id="areaText" class="info-text">请选择</span> </span><!-- <span class="line-right">|</span> --></div></div></div><div class="header-search-box index" pagetype="index"><div class="header-search"><a href="http://www.kongfz.com/" class="logo-text clearfix"><!-- <img
+										class="logo-220"
+										src="https://www.kongfz.com/static/kfz-searchBar/logo-220.png"
+										alt="孔夫子旧书网-网上买书卖书、古旧书收藏品交易平台"
+									/>
+									<img
+										class="logo-220-red"
+										src="https://www.kongfz.com/static/kfz-searchBar/logo-220-red.png"
+										alt="孔夫子旧书网-网上买书卖书、古旧书收藏品交易平台"
+									/>
+									占位居中 --> <img class="logo-250" src="https://www.kongfz.com/static/kfz-searchBar/logo-250.png" alt="孔夫子旧书网-网上买书卖书、古旧书收藏品交易平台"></a><div class="search-box"><div class="clearfix"><form id="searchForm" class="search-con"><div class="search-type shop"><div class="item-type" type="shop">商品</div><div class="item-type" type="pm">拍卖区</div><div class="indicator"></div></div><div class="search-input-box"><div class="search-status-box"><div class="cur-status"><span class="text">在售</span> <span class="icon-tab-down"></span> <span class="icon-tab-up"></span></div><div class="status-other" status="1"><div class="text">已售</div></div></div><input id="searchInput" type="text" name="searchWord" autocomplete="off" value=""> <label class="search-label" for="searchInput">商品名称、作者、出版社、ISBN</label><div id="searchHistoryBox" class="search-history-box search-history-box-flag">搜索历史</div></div><div id="searchBtn" class="btn">搜索</div></form><div class="search-link"><a class="adv-search-btn" href="javascript:;" rel="nofollow">高级搜索</a></div></div></div></div></div></div><div class="content-wrap"><div class="content-inner"><div class="content-top"><div class="nice-top"><input type="checkbox"> <span class="checkedAll"></span> <label for="">全选</label></div><div class="title-top">商品</div><div class="press-top">品相</div><div class="money-top">单价</div><div class="numbertop">数量</div><div class="moneys-count-top">金额</div><div class="operate-top">操作</div></div><ul class="shopping-list"><!-- <li>
+							<div class="shopping-title-wrap">
+							<div class="shopping-title-top">
+								<div class="title-input"><input type="checkbox"><span></span></div>
+								<p>邵瑞图书专营店</p>
+								<div class="city">广东省广州市增城区</div>
+								<div class="press">店主：邵瑞图书</div>
+								<div class="talk"><a href="">离线留言</a></div>
+								</div>
+							<div class="input-boder"><input type="checkbox"><span></span></div>
+							<img src="https://www.kfzimg.com/sw/kfzimg/1945/017f9f2636aae3a538_s.jpg" alt="">
+							<h6>蛤蟆先生去看心理医生 英国国民级心理咨询入门书 知道该不该去看心理医生 请先看看这本书 见证疗愈与改变的发生新华正版图书</h6>
+							<h6>全新</h6>
+							<h6>23.80</h6>
+							<div class="inputbox-wrap">
+								<div class="input-box">
+									<a href="" class="btn-left">-</a><input type="text" value="1" class="input-text"><a href="" class="btn-right">+</a>
+								</div>
+							</div>
+							<p>47.6</p>
+							<div>
+							<p>移入收藏夹</p>
+							<p  class="delete">删除</p>
+							</div>
+						</li> --></ul></div></div><div class="cart-box-wrap"><div class="cart-box"><div class="nice-top"><input type="checkbox"> <span></span> <label for="">全选</label></div><div class="null-none"><div>批量移入收藏</div><div class="delete-all">批量删除</div></div><div class="buy"><a href="">去结算</a></div><div class="null-right"><div>已选<span class="num">&nbsp;&nbsp;</span>件商品,点击查看</div><div>合计（不含运费）：</div><h3><i>￥</i><span class="moneys-all"></span></h3></div></div></div></div><div class="footer-wrap"><div class="foot-box"><p>© 2002-2020 Kongfz.com 孔夫子旧书网 版权所有</p><ul><li><a href="">关于孔网</a></li><li><a href="">联系我们</a></li><li><a href="">帮助中心</a></li><li><a href="">版权隐私</a></li><li><a href="">广告业务</a></li><li><a href="">工作机会</a></li><li><a href="">移动版</a></li><li><a href="">图书目录</a></li><li><a href="">图书标签</a></li></ul></div></div></body><script src="./js/topnav.js"></script><script>$(function(){
+		$.ajax({
+			url:"data/list.json",
+			success:function(arr){
+				var cookieStr = $.cookie("goods");
+                        if(cookieStr){
+                            var cookieArr = JSON.parse(cookieStr);
+                            var newArr = []; //符合条件数据
+                            for(var i = 0; i < arr.length; i++){
+                                for(var j = 0; j < cookieArr.length; j++){
+                                    if(arr[i].id == cookieArr[j].id){
+                                        arr[i].num = cookieArr[j].num;
+                                        newArr.push(arr[i]);
+                                        break;
+                                    }
+                                }
+                            }
+							console.log(newArr)
+				var str=``;
+				for(i=0;i<newArr.length;i++){
+					str+=`
+					<li id="${newArr[i].id}">
+							<div class="shopping-title-wrap">
+							<div class="shopping-title-top">
+								<div class="title-input"><input class="input-1" type="checkbox"><span class="checked"></span></div>
+								<p>${newArr[i].press}</p>
+								<div class="city">${newArr[i].city}</div>
+								<div class="press">店主：邵瑞图书</div>
+								<div class="talk"><a href="">离线留言</a></div>
+								</div>
+							<div class="input-boder"><input class="input-1" type="checkbox"><span class="checked"></span></div>
+							<img src="${newArr[i].img}" alt="">
+							<h6>${newArr[i].title}</h6>
+							<h6>${newArr[i].product}</h6>
+							<h6 class="m-1">${newArr[i].moneys}</h6>
+							<div class="inputbox-wrap">
+								<div class="input-box">
+									<a  class="btn-left">-</a><input type="text" value="${newArr[i].num}" class="input-text"><a  class="btn-right">+</a>
+								</div>
+							</div>
+							<p id="moneys">${(newArr[i].moneys*newArr[i].num).toFixed(2)}</p>
+							<div>
+							<p>移入收藏夹</p>
+							<p  class="delete">删除</p>
+							</div>
+						</li>
+					`
+				}
+				$(".shopping-list").html(str);
+				console.log($.cookie("goods"));
+			  }
+			},
+			error:function(msg){
+				console.log(msg);
+			}
+		})
+		$(".shopping-list").on("click", ".delete", function(){
+                var id = $(this).closest("li").remove().attr("id");
+                // console.log($.cookie("goods"));
+                //在cookie中删除这个数据
+                var cookieArr = JSON.parse($.cookie("goods"));
+                cookieArr = cookieArr.filter(item => item.id != id);
+                
+                cookieArr.length ? $.cookie("goods", JSON.stringify(cookieArr), {expires: 7}) : $.cookie("goods", null);
+                sc_num();
+            })
+			$(".shopping-list").on("click", ".inputbox-wrap a", function(){
+				var id = $(this).closest("li").attr("id");
+                var num3 =$(this).parent().parent().parent().children("#moneys");
+				var m_1=$(this).parent().parent().parent().children(".m-1").text();
+				var val = $(this).siblings("input").val();
+				var sumOne = (m_1*val).toFixed(2);
+                //找到cookie中的商品
+				num3.html(sumOne);
+
+                var cookieArr = JSON.parse($.cookie("goods"));
+                var res = cookieArr.find(item => item.id == id);
+            
+                if(this.innerHTML == "+"){
+                    res.num++;
+                }else{
+                    res.num == 1 ? alert("数量为1，不能减少") : res.num--;
+                }
+                $(this).siblings("input").val(`${res.num}`);
+				var sumOne = (m_1*res.num).toFixed(2);
+                //找到cookie中的商品
+				num3.html(sumOne);
+                $.cookie("goods", JSON.stringify(cookieArr), {
+                    expires: 7
+                })
+                sc_num();
+            })
+			function sc_num(){
+                var cookieStr = $.cookie("goods");
+                if(!cookieStr){
+                    $(".null-right span").html(0);
+                }else{
+                    var cookieArr = JSON.parse(cookieStr);
+                    var sum = 0;
+					var money = 0;
+                    for(var i = 0; i < cookieArr.length; i++){
+                        sum += cookieArr[i].num;
+                    }
+                    $(".null-right .num").html(sum);
+                }
+				
+            }
+		$(".shopping-list").on("click", ".input-1", function(){
+			var chec=$(this).parent().parent().parent().children(".input-1");
+			var chec2=$(this).parent().siblings("div").children(".input-1");
+			console.log(chec,chec2);
+		})	
+			
+			
+	})</script><script>$(function(){
+
+	var contentH = $(".cart-box").offset().top;	
+	
+
+	$(window).scroll(function(){
+		show()
+	})
+	$(window).load(function(){
+		show()
+	})
+
+	function show(){
+		var scrTop = $(window).scrollTop();
+		var viewH = $(window).height();
+		// console.log(scrTop,viewH,contentH);
+	if(contentH>(scrTop+viewH)-560){
+		$(".cart-box").css({
+			"position":"fixed",
+			"bottom": "0"
+		})
+	}else{
+		$(".cart-box").css({
+			"position":"relative"
+		})
+	}
+	}
+	})</script></html>

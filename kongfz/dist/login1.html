@@ -1,0 +1,52 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Document</title><link rel="stylesheet" href="./css/bootstrap.min.css"><style>body {
+        background: url(./image/MSN-6.jpg);
+        background-size: cover;
+      }
+      body,
+      html {
+        height: 100%;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
+      #login {
+        width: 400px;
+      }
+      #alert {
+        margin: 0px;
+        padding: 5px;
+        text-align: center;
+        display: none;
+        margin-bottom: 5px;
+      }</style></head><body><div class="container"><div class="panel panel-primary" id="login"><div class="panel-heading">登录</div><div class="panel-body"><div class="form-group"><label for="username">用户名：</label> <input type="text" name="username" class="form-control" placeholder="用户名"></div><div class="form-group"><label for="password">密码：</label> <input type="text" name="password" class="form-control" placeholder="密码"></div><div id="alert" class="alert alert-danger" role="alert">...</div><a href="http://10.30.156.158/register.html">马上注册</a> <button class="btn btn-primary pull-right" id="btn1">登录</button></div></div></div></body><script type="module">import { $_ajax } from "./ajax.js";
+    var oInputs = document.querySelectorAll(".form-group input");
+    var oBtn = document.getElementById("btn1");
+    var oAlert = document.getElementById("alert");
+
+    oBtn.onclick = function () {
+      $_ajax({
+        type: "post",
+        url: "login.php",
+        data: {
+          username: oInputs[0].value,
+          password: oInputs[1].value,
+        },
+      })
+        .then((res) => {
+          var obj = JSON.parse(res);
+
+          if (obj.code) {
+            oAlert.className = "alert alert-danger";
+          } else {
+            oAlert.className = "alert alert-success";
+          }
+          oAlert.style.display = "block";
+          oAlert.innerHTML = obj.msg;
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    };</script></html>

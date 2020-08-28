@@ -1,0 +1,244 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Document</title><link rel="stylesheet" href="css/list.min.css"><link rel="stylesheet" href="css/iconfont.css"><script src="./js/jquery-1.11.3.js"></script><script src="./js/jquery.cookie.js"></script><script src="./js/parabola.js"></script><style>#ball{
+    width: 20px;
+    height: 20px;
+    background: #d86070;
+    border-radius: 50%;
+    position: absolute;
+    left:0px;
+    top: 0px;
+    display: none;
+}</style></head><body><div class="mainWrap"><div class="headerWrap"><div class="header-nav"><ul class="nav-left"><li><a href="">首页</a></li><li><a href="">书店区</a></li><li><a href="">书摊区</a></li><li><a href="">新书</a></li><li><a href="">在线拍卖</a></li><li><a href="">艺术品专场</a></li></ul><div class="user-info-box clearfix" id="user-info-box"><div class="item-info login-win" id="login-win"><span id="nickName" class="info-normal"><span class="info-text">登录</span> <span class="info-text">/</span> <span class="info-text">注册</span> </span><!-- 顶部隐藏 --><!-- 登陆注册 --><div class="login-win-Wrap" id="login-win-Wrap"><p><a href="login.html">登&nbsp;&nbsp;&nbsp;&nbsp;录</a></p><p><a href="login.html">免费注册</a></p><span>其他方式</span><ul><li><a href=""></a><span style="color:#77a877;" class="iconfont icon-weixinfang"></span><i>&nbsp微信</i></li><li><a href=""></a><span style="color:#51aeca;" class="iconfont icon-QQfang"></span><i>&nbspQQ</i></li><li><a href=""></a><span style="color:#d86070;" class="iconfont icon-weibo3"></span><i>微博</i></li></ul></div></div><div class="item-info message-win"><a id="msgNum" href="http://message.kongfz.com/Index/myMessage/#inbox" class="info-link msg-normal" target="_blank" rel="nofollow"><!-- <span class="iconfont icon-xiaoxi un-read-style"></span>
+                        <span class="info-text un-read-style"
+                          >未读消息 <span id="unReadNum" class="num"></span
+                        ></span> --> <span class="info-text normal-style">消息</span></a></div><div class="item-info" id="shop-list-Wrap"><a id="cartLink" href="http://localhost:8888/shopping.html" class="info-link" target="_blank" rel="nofollow"><span style="color:#8c222c;" class="iconfont icon-gouwuche"></span> <span class="info-text">购物车 <span id="cartNum" class="num"></span></span> </a><!-- 购物车 --><div class="shop-Wrap" id="shopWrap"><span>最近加入的商品：</span><ul class="shopping-wrap"><!-- <li><img src="https://www.kfzimg.com/sw/kfzimg/1983/0187b7771a4584b38a_s.jpg" alt="">
+                            <a href="">古音汇纂</a>
+                            <div class="sp-right">
+                            <div class="price">￥823.00</div>
+                            <div class="delete">删除</div>
+                            </div>
+                          </li> --></ul></div></div><div class="item-info"><a href="http://shop.kongfz.com/buyer/order/order_list.html" class="info-link" target="_blank" rel="nofollow"><span class="info-text">我的订单</span></a></div><div class="item-info" id="ower-wrap"><a href="http://user.kongfz.com/" class="info-link" target="_blank" rel="nofollow"><span class="info-text">个人中心</span> </a><!-- 个人中心 --><div class="owerWrap" id="owerWrap"><p><span class="iconfont icon-dianpu"></span>店铺</p><span><a href="">我的订单</a></span> <span><a href="">收藏</a></span><p><span class="iconfont icon-paimai"></span>拍卖</p><span><a href="">拍卖交易</a></span> <span><a href="">我的竞价</a></span> <span><a href="">收藏</a></span><p></p><span><a href="">我的好友</a></span> <span><a href="">资金账户</a></span></div></div><div class="item-info"><a href="http://shop.kongfz.com/seller/" class="info-link" target="_blank" target="_blank"><span class="info-text">卖家中心</span></a></div><div class="item-info"><span class="info-normal"><span class="info-text">客服</span></span></div><div class="item-info mobile-win"><span class="info-normal"><a href="https://m.kongfz.com/" class="info-link" target="_blank"><span class="info-text">手机版</span> </a></span><span class="line-right-test">|</span></div><!-- <div class="item-info login-win">
+                                      <span class="line-left">|</span>
+                                      <span class="line-right">|</span>
+                                      <span id="nickName" class="info-normal">
+                                          <span class="info-text">登录</span>
+                                          <span class="info-text">/</span>
+                                          <span class="info-text">注册</span>
+                                      </span>
+                                  </div> --><div class="item-info area-win login-win dest"><span class="info-normal"><span id="areaText" class="info-text">请选择</span> </span><!-- <span class="line-right">|</span> --></div></div></div><div class="header-search-box index" pagetype="index"><div class="header-search"><a href="http://www.kongfz.com/" class="logo-text clearfix"><!-- <img
+                          class="logo-220"
+                          src="https://www.kongfz.com/static/kfz-searchBar/logo-220.png"
+                          alt="孔夫子旧书网-网上买书卖书、古旧书收藏品交易平台"
+                        />
+                        <img
+                          class="logo-220-red"
+                          src="https://www.kongfz.com/static/kfz-searchBar/logo-220-red.png"
+                          alt="孔夫子旧书网-网上买书卖书、古旧书收藏品交易平台"
+                        />
+                        占位居中 --> <img class="logo-250" src="https://www.kongfz.com/static/kfz-searchBar/logo-250.png" alt="孔夫子旧书网-网上买书卖书、古旧书收藏品交易平台"></a><div class="search-box"><div class="clearfix"><form id="searchForm" class="search-con"><div class="search-type shop"><div class="item-type" type="shop">商品</div><div class="item-type" type="pm">拍卖区</div><div class="indicator"></div></div><div class="search-input-box"><div class="search-status-box"><div class="cur-status"><span class="text">在售</span> <span class="icon-tab-down"></span> <span class="icon-tab-up"></span></div><div class="status-other" status="1"><div class="text">已售</div></div></div><input id="searchInput" type="text" name="searchWord" autocomplete="off" value=""> <label class="search-label" for="searchInput">商品名称、作者、出版社、ISBN</label><div id="searchHistoryBox" class="search-history-box search-history-box-flag">搜索历史</div></div><div id="searchBtn" class="btn">搜索</div></form><div class="search-link"><a class="adv-search-btn" href="javascript:;" rel="nofollow">高级搜索</a></div></div></div></div></div></div><div class="detail-wrap"><div class="detail-innner"><h1 class="font20">古音汇纂</h1><div class="detail-left"><div class="detail-img"><a href=""><img src="images/img-1.jpg" alt=""></a><div><span>分享</span><ul><li>微信</li><li>微博</li><li>qq</li><li>豆瓣</li></ul></div></div><div class="detail-left-top"><ul><li>作者: 宗福邦 著 ； 陈世铙 著 ； 于亭 著 ； 邓福禄 著 ； 汪波 著</li><li>出版社: 商务印书馆</li><li>出版时间: 2020-06</li><li>ISBN: 9787100174596</li></ul><ul><li>定价: 980.00</li><li>装帧: 其他</li><li>分类: 综合性图书</li></ul></div><div class="detail-right-bottom"><p>2019年，大型汉语工具书《古音汇纂》由商务印书馆出版。《古音汇纂》是《故训汇纂》<br>（2007年获得第一届中国出版政府奖）的姊妹篇，《故训汇纂》是历代汉字字义训释资料的大汇编，勾勒了2000多年来汉字字义发展演变的脉络；《古音汇纂》则是历代汉字音读资料的大汇编，努力探寻汉字字音发展演变的轨迹。《古音汇纂》是“十一五”国家重点图书出版规划和国家出版基金支持的项目，由武汉大学古籍整理研究所编纂，前后历时二十二年完成。 二十二年磨一剑的学术巨制 《古音汇纂》是宗福邦教授带领武汉大学古籍整理研究所团队继《故训汇纂》之后推出的又一部大型学术工具书。宗福邦教授长期从事音韵、训诂研究和辞书编纂工作，1985年开始主持编纂训诂学巨著《故训汇纂》，经历了十八个春秋的埋首耕耘，2003年由商务印书馆出版后，受到海内外学术界高度评价，被誉为“利今传世的巨制”。1998年，《古音汇纂》编纂工作启动，宗教授带领团队又开始了另一段苦其心志、劳其筋骨的艰难历程。 与《故训汇纂》相较，《古音汇纂》称得上“筚路蓝缕，以启山林”的开创性工作，无所依托，无所借鉴，只能“摸着石头过河”，在编写实践中反复论难，参究权衡，逐步探索。《古音汇纂》所收的列目书，有很大一部分未经校理，文字讹舛甚多。为了对读者负责，编写过程中若数据疑有讹误，又无前贤之校本可参用者，就只能由编者利用已知语料，多方参证，慎重认定之后再作校改，并用校改号加以注明。这样读者仍可知原书之旧，也可以对校改之正误作出判断。 尽管《古音汇纂》编纂难度之大，时间之长，远远超出了原先的设想，宗福邦教授带领的团队以“慎于始，诚于中，善于后”的精神，用二十二年殚精竭智的忘我奉献，为中国的学术事业留下了一部丰碑式的巨著。 “综音声之流变”的必备工具书 《古音汇纂》的编纂目标是源流并重，上起先秦，下迄清末，涵盖上古、中古和近代时期的音释材料，并提供其音读语境及相关字义训释，形成系统而完备的历代汉字音读资料汇编。既有韵书、字书中的直音和反切，也有古籍注释和音义著作中的字音资料，还有散见于典籍中的谐声、声训、比况注音等说解字音的材料，同时古籍中的异体、通假、同源以及与音读相关的异文材料也一并收入。 《古音汇纂》正文按《康熙字典》214个部首编排，字目的音读材料分别按上古音、中古音、近代音三个时段排列，并简明扼要地列出引文，揭示音读的语境和相关的字义训释。全书共引书140余种，收录字目13000多个（含异体字），收录注项30余万条，注条40余万条，规模达1300多万字。对于汉语语言文字研究特别是语音方面的研究，以及文献注释和辞书编纂等，都具有重要的参考价值。 数字化编纂的全新探索 《古音汇纂》利用计算机技术作为编纂的重要手段，改变了传统辞书编纂的工作方式，率先在国内开展大型语文工具书计算机数据库建设和辅助编纂探索。这对于项目组也是全新的课题，经过不断探索，边学边干，最终建成了包含百万余条数据记录的古代音切数据计算机数据库，总字量达四千万字。从数据的录入、校改、管理、排序、提取到形成数据结构，组织流程，分析排查，编排出稿，以至后来的删减数据书目，批量性地校改文字讹误，都可以借助计算机实现，改变了过去只能靠专业人员手工制卡分卡，编排数据，以及誊写出稿的辞书编纂方式，极大地提高了效率和准确性。 《古音汇纂》和《故训汇纂》配套使用，更为相得益彰。《故训汇纂》是以训诂为中心，“集雅诂之大成”；《古音汇纂》则以语音为中心，“综音声之流变”。这两部书都是从浩如烟海的中国古代文献中撮取专题资料编纂而成，是汉语语言文字研究人员、古籍整理人员和辞书编纂人员的案头必备工具书，同时也可供有这方面爱好的普通读者使用。</p><a href="">查看详情</a></div></div><div class="detail-right"><div class="detail-right-title"><span>相关分类</span></div><div style="text-align: justify;text-align-last: justify;padding-top: 4px;"><span>字典词典</span> <span>工具书</span> <span>百科全书/年鉴</span></div></div><!--列表  --><div class="detail-list"><div class="detail-list-nav"><ul><li class="gray3 p_l20 fontBlod">4条</li><li class="gray3" style="padding: 0 6px; color:#ccc">|</li><li class="orange5"><a href="">综合排序</a></li><li><a href="">最新上架</a></li><li><a href="">店铺</a></li><li><a href="">含运费从低到高</a></li><li><a href="">品相</a></li><li><a href="">只看全新</a></li></ul></div><div class="detail-list-con"><ul><!-- <li>
+                    <div class="list-con-img" id="list-con-img">
+                      <a href=""><img class="min-img" src="https://www.kfzimg.com/sw/kfzimg/1931/017c77c86edd3a4033_s.jpg" alt=""></a>
+                      <div class="big-img-box"><img src="https://www.kfzimg.com/sw/kfzimg/1983/0187b7771a4584b38a_n.jpg" alt=""></div>
+                    </div>
+                    <div class="list-con-title">
+                      <a href="" target="_blank" class="link">古音汇纂</a>
+                      <span class="list-con-dis">《古音汇纂》是《故训汇纂》（2007年获得第一届中国出版政府奖）的姊妹篇，《故训汇纂》是历代汉字字义训释资料的大汇编，勾勒了2000多年来汉字字义发展演变的脉络；《古音汇纂》则是历代汉字音读资料的大汇编，努力探寻汉字字音发展演变的轨迹。《古音汇纂》是“十一五”国家重点图书出版规划和国家出版基金支持的项目，由武汉大学古籍整理研究所编纂，前后历时二十二年完成。</span>
+                    </div>
+                    <div class="list-con-edition gray">
+                      <br>
+                      </div>
+                    <div class="list-con-product gray orange5">全新</div>
+                    <div class="list-con-press">
+                      <div>
+                        <a href="">齐鲁文华书店连锁二分店</a>
+                        <span class="iconfont icon-duihua"></span>
+                      </div>
+                      <div class="con-press-city gray9">北京市东城区</div>
+                      <a href=""><span class="iconfont icon-bangzhuzhongxin"></span></a>
+                    </div>
+                    <div class="list-con-money">
+                      <div>￥
+                        <span>823.00</span>
+                      </div>
+                      <div class="list-con-m">
+                        <p class="ship-fee">
+                          <span class="gray9">快递：￥20.00</span>
+                        </p>
+                      </div>
+                      </div>
+                    <div class="list-con-btn">
+                        <a href="" class="con-btn-cart">加入购物车</a>
+                        <a href="" class="con-btn-collect">收藏</a>
+                      </div>
+                  </li> --></ul></div></div><!-- data数据 --><div class="gallery-book-list-Wrap"><p class="gallery-book-list"><span>好书推荐</span> <i>/</i> <a href="#" class="more-btn">更多</a></p><ul class="book-list-right" id="book-list-right"><!-- <li>
+                <a href=""><img src="images/img-1.jpg" alt="">
+                <div>123456</div></a>
+                <span><a href="">蛤蟆先生去看心理医生</a></span>
+                <p>宗福邦、陈世铙、于亭、邓附录、汪波 著</p>
+                <h6><i>￥785.00</i>起</h6>
+              </li> --></ul></div></div></div><div class="footer-wrap"><div class="foot-box"><p>© 2002-2020 Kongfz.com 孔夫子旧书网 版权所有</p><ul><li><a href="">关于孔网</a></li><li><a href="">联系我们</a></li><li><a href="">帮助中心</a></li><li><a href="">版权隐私</a></li><li><a href="">广告业务</a></li><li><a href="">工作机会</a></li><li><a href="">移动版</a></li><li><a href="">图书目录</a></li><li><a href="">图书标签</a></li></ul></div></div></div><div id="ball"></div><script src="./js/topnav.js"></script></body><script src="./js/list-12.js"></script><!-- <script src="./js/list-11.js"></script> --><script>$(function(){
+  sc_num();
+  sc_msg();
+    $.ajax({
+      url:"data/list.json",
+      success:function(arr){
+        // console.log(arr);
+        var str=``;
+        for(var i=0;i<arr.length;i++){
+          str+=`
+          <li>
+                    <div class="list-con-img" id="list-con-img">
+                      <a href=""><img class="min-img" src="${arr[i].img}" alt=""></a>
+                      <div class="big-img-box"><img src="${arr[i].imgbig}" alt=""></div>
+                    </div>
+                    <div class="list-con-title">
+                      <a href="" target="_blank" class="link">${arr[i].title}</a>
+                      <span class="list-con-dis">${arr[i].dls}</span>
+                    </div>
+                    <div class="list-con-edition gray">
+                      <br>
+                      </div>
+                    <div class="list-con-product gray orange5">${arr[i].product}</div>
+                    <div class="list-con-press">
+                      <div>
+                        <a href="">${arr[i].press}</a>
+                        <span class="iconfont icon-duihua"></span>
+                      </div>
+                      <div class="con-press-city gray9">${arr[i].city}</div>
+                      <a href=""><span class="iconfont icon-bangzhuzhongxin"></span></a>
+                    </div>
+                    <div class="list-con-money">
+                      <div>￥
+                        <span>${arr[i].moneys}</span>
+                      </div>
+                      <div class="list-con-m">
+                        <p class="ship-fee">
+                          <span class="gray9">快递：￥${arr[i].m}</span>
+                        </p>
+                      </div>
+                      </div>
+                    <div  class="list-con-btn">
+                        <div id="${arr[i].id}" class="con-btn-cart">加入购物车</div>
+                        <div class="con-btn-collect">收藏</div>
+                      </div>
+                  </li>`
+        
+        }
+        $(".detail-list-con ul").html(str);
+      },
+      error:function(mag){
+        console.log(msg)
+      }
+    })
+
+  $(".detail-list-con ul").on("click",".con-btn-cart",function(){
+    var id = this.id;
+     //1、判断是否是第一次添加
+     var first = $.cookie("goods") == null ? true : false;
+                if(first){
+                    var arr = [{id:id, num:1}];
+                    $.cookie("goods", JSON.stringify(arr), {
+                        expires: 7
+                    })
+                }else{
+                    //2、判断之前是否添加过
+                    var cookieArr = JSON.parse($.cookie("goods"));
+                    var index = cookieArr.findIndex(item => item.id == id);
+                    if(index >= 0){
+                        cookieArr[index].num++;
+                    }else{
+                        cookieArr.push({id:id, num:1});
+                    }
+
+                    $.cookie("goods", JSON.stringify(cookieArr), {
+                        expires: 7
+                    })
+                }
+
+                sc_num();
+                sc_msg();
+                ballMove(this);//this是当前点击的按钮
+  })
+  //计算购物车中商品总数
+  function sc_num(){
+                var cookieStr = $.cookie("goods");
+                if(!cookieStr){
+                    $("#cartNum").html(0);
+                }else{
+                    var cookieArr = JSON.parse(cookieStr);
+                    var sum = 0;
+                    for(var i = 0; i < cookieArr.length; i++){
+                        sum += cookieArr[i].num;
+                    }
+                    $("#cartNum").html(sum);
+                }
+            }
+
+            function sc_msg(){
+                $.ajax({
+                    url: "data/list.json",
+                    success: function(arr){
+                        var cookieStr = $.cookie("goods");
+                        if(cookieStr){
+                            var cookieArr = JSON.parse(cookieStr);
+                            var newArr = []; //符合条件数据
+                            for(var i = 0; i < arr.length; i++){
+                                for(var j = 0; j < cookieArr.length; j++){
+                                    if(arr[i].id == cookieArr[j].id){
+                                        arr[i].num = cookieArr[j].num;
+                                        newArr.push(arr[i]);
+                                        break;
+                                    }
+                                }
+                            }
+                            // console.log(newArr);  //购物车显示的数据
+                            var str = ``;
+                            for(var i = 0; i < newArr.length; i++){
+                                str += `<li id="${newArr[i].id}"><img src="${newArr[i].img}" alt="">
+                            <a href="">${newArr[i].title}</a>
+                            <div class="sp-right">
+                            <div class="price">￥${newArr[i].moneys}</div>
+                            <div class="delete">删除</div>
+                            </div>
+                          </li>
+                                `
+                            }
+                            $(".shop-Wrap ul").html(str);
+                        }
+                    },
+                    error: function(msg){
+                        console.log(msg);
+                    }
+                })
+            }
+            $(".shop-Wrap ul").on("click", ".delete", function(){
+                var id = $(this).closest("li").remove().attr("id");
+                // console.log($.cookie("goods"));
+                //在cookie中删除这个数据
+                var cookieArr = JSON.parse($.cookie("goods"));
+                cookieArr = cookieArr.filter(item => item.id != id);
+                
+                cookieArr.length ? $.cookie("goods", JSON.stringify(cookieArr), {expires: 7}) : $.cookie("goods", null);
+                sc_num();
+            })
+
+            function ballMove(oBtn){
+                $("#ball").show().css({
+                    left: $(oBtn).offset().left,
+                    top: $(oBtn).offset().top
+                })
+
+                var X = $("#cartLink").offset().left - $(oBtn).offset().left;
+                var Y = $("#cartLink").offset().top - $(oBtn).offset().top;
+                console.log(X,Y);
+                var bool = new Parabola({
+                    el: "#ball",
+                    offset: [X, Y],
+                    duration: 800,
+                    curvature: 0.001,
+                    callback: function(){
+                        $("#ball").hide();
+                    }
+                });
+                bool.start();
+            }
+          })</script></html>

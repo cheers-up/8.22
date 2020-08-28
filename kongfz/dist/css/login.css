@@ -68,21 +68,6 @@ li {
 element.style {
   display: block; }
 
-.login_yonghuming {
-  display: none; }
-
-.overTip {
-  width: 450px;
-  height: auto;
-  _overflow: visible;
-  visibility: visible; }
-
-.overTip, .overWin h3 {
-  padding: 0;
-  margin: 0;
-  overflow: visible; }
-
-user agent stylesheet
 div {
   display: block; }
 
@@ -92,7 +77,7 @@ body, html, input {
   font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Noto Sans CJK SC,Lantinghei SC,Microsoft YaHei,WenQuanYi Micro Hei,Arial,sans-serif;
   color: #333; }
 
-.loginWrap {
+.loginWrap, .registerWrap {
   width: 450px;
   height: 341px;
   background: #F7F7F6;
@@ -101,6 +86,12 @@ body, html, input {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%); }
+
+.loginWrap {
+  display: none; }
+
+.registerWrap {
+  display: block; }
 
 .login-inner {
   padding: 40px 0 30px 0px;
@@ -119,10 +110,10 @@ body, html, input {
 .login {
   margin: 0 50px; }
 
-.loginWrap .login:first-child {
+.login:first-child {
   width: 350px;
   height: 35px; }
-  .loginWrap .login:first-child h1 {
+  .login:first-child h1 {
     float: left;
     font-size: 30px;
     height: 35px;
@@ -130,11 +121,11 @@ body, html, input {
     color: #666;
     font-weight: 500;
     overflow: hidden; }
-  .loginWrap .login:first-child span a {
+  .login:first-child span a:first-child {
     float: right;
     margin-top: 15px;
     color: #999; }
-  .loginWrap .login:first-child span a:hover {
+  .login:first-child span a:hover {
     color: #000; }
 
 .inputWrap {
@@ -158,6 +149,7 @@ body, html, input {
   right: 68px; }
 
 .inputuser, .inputpass {
+  display: none;
   position: absolute;
   background: #fff;
   width: 84px;
@@ -170,21 +162,27 @@ body, html, input {
   top: 129px;
   right: 68px; }
 
-.loginWrap .input-2 {
+.registerWrap .login .input-2 {
+  margin-top: 12px; }
+  .registerWrap .login .input-2 a {
+    color: #365899;
+    margin-top: none; }
+
+.loginWrap .input-2, .registerWrap .input-2 {
   width: 350px;
   height: 17px;
   margin-top: 10px; }
-  .loginWrap .input-2 .input-left {
+  .loginWrap .input-2 .input-left, .registerWrap .input-2 .input-left {
     float: left; }
-    .loginWrap .input-2 .input-left span {
+    .loginWrap .input-2 .input-left span, .registerWrap .input-2 .input-left span {
       margin: 0px 0px 0px 5px;
-      color: #999; }
-  .loginWrap .input-2 a {
-    color: #999;
-    float: right; }
-  .loginWrap .input-2 a:hover {
+      color: #999;
+      line-height: 150%; }
+  .loginWrap .input-2 a, .registerWrap .input-2 a {
+    color: #999; }
+  .loginWrap .input-2 a:hover, .registerWrap .input-2 a:hover {
     color: #000; }
-  .loginWrap .input-2 input[type="checkbox"] {
+  .loginWrap .input-2 input[type="checkbox"], .registerWrap .input-2 input[type="checkbox"] {
     position: relative;
     width: 12px;
     height: 12px;

@@ -24,21 +24,7 @@ li{
 element.style {
     display: block;
 }
-.login_yonghuming {
-    display: none;
-}
-.overTip {
-    width: 450px;
-    height: auto;
-    _overflow: visible;
-    visibility: visible;
-}
-.overTip, .overWin h3 {
-    padding: 0;
-    margin: 0;
-    overflow: visible;
-}
-user agent stylesheet
+
 div {
     display: block;
 }
@@ -48,7 +34,7 @@ body, html, input {
     font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Noto Sans CJK SC,Lantinghei SC,Microsoft YaHei,WenQuanYi Micro Hei,Arial,sans-serif;
     color: #333;
 }
-.loginWrap{
+.loginWrap,.registerWrap{
     width: 450px;
     height: 341px;
     background: #F7F7F6;
@@ -57,6 +43,12 @@ body, html, input {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+.loginWrap{
+    display: none;
+}
+.registerWrap{
+    display: block;
 }
 .login-inner{
     padding: 40px 0 30px 0px;
@@ -76,7 +68,7 @@ img{
 .login{
     margin: 0 50px;
 }
-.loginWrap .login:first-child{
+.login:first-child{
     width: 350px;
     height: 35px;
     h1{
@@ -88,7 +80,7 @@ img{
         font-weight: 500;
         overflow: hidden;
     }
-    span a{
+    span a:first-child{
         float: right;
         margin-top: 15px;
         color: #999;
@@ -121,6 +113,7 @@ img{
     right: 68px;
 }
 .inputuser,.inputpass{
+    display: none;
     position: absolute;
     background: #fff;
     width: 84px;
@@ -133,7 +126,14 @@ img{
     top: 129px;
     right: 68px;
 }
-.loginWrap .input-2{
+.registerWrap .login .input-2{
+    margin-top: 12px;
+    a{
+      color: #365899;
+      margin-top: none;
+    }
+}
+.loginWrap .input-2,.registerWrap .input-2{
     width: 350px;
         height: 17px;
         margin-top: 10px;
@@ -143,11 +143,11 @@ img{
         span{
             margin: 0px 0px 0px 5px;
             color: #999;
+            line-height: 150%;
         }
     }
     a{
         color: #999;
-        float: right;
     }
     a:hover{
         color: #000;

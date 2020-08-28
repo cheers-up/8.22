@@ -46,3 +46,113 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+  .gallery-book-list{
+	width: 100%;
+	height: 22px;
+	margin-bottom: 25px;
+	margin-top: 20px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 34px;
+	span{
+	  font-size: 18px;
+	  left: 20px;
+	  top: 12px;
+	  color: #333;
+	  font-weight: 700;
+	}
+	span+i{
+	  font-size: 14px;
+	  color: #999;
+	  font-weight: 400;
+	}
+	i+a{
+	  font-size: 12px;
+	  color: #0057a0;
+	}
+  }
+  img{
+	display: block;
+  }
+  .book-list-right{
+	width: 1005px;
+	height: 550px;
+	li{
+	  text-align: center;
+	  width: 140px;
+	  height: 234px;
+	  margin-right: 33px;
+	  float: left;
+	  margin-bottom:40px;
+	  display: inline-block;
+	  font-size: 12px;
+	  position: relative;
+	}
+	li:nth-child(6n){
+	  margin-right: 0;
+	  
+	}
+	a{
+	  width: 140px;
+	  height: 140px;
+	  color: #333;
+	  div{
+		display: none;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 272px;
+		max-height: 108px;
+		border: 1px solid #e5e5e5;
+		background: #fff;
+		color: #666;
+		text-align: justify;
+		font-size: 12px;
+		line-height: 20px;
+		overflow: hidden;
+		padding: 4px 6px;
+	  }
+	  img{
+		vertical-align: baseline;
+		display: inline-block;
+	  max-width: 99;
+	  height:140px;
+	  font-size: 0;
+	  margin: 0;
+	  }
+	}
+	span{
+	  width: 119px;
+	  padding-left: 21px;
+	  display: block;
+	  max-height: 40px;
+	  overflow: hidden;
+	  text-align: left;
+	}
+	p{
+	  text-align: left;
+	  display: block;
+	  color: #999;
+	  height: 22px;
+	  width: 119px;
+	  overflow: hidden;
+	  padding-left: 21px;
+	}
+	
+	
+	i{
+	  // float: left;
+	  margin-right: 3px;
+	  color: #bf7f5f;
+	  font-size: 16px;
+	  padding-left: 21px;
+  
+	}
+	h6{
+	  color: #999;
+	 display: inline;
+	 position: absolute;
+	 bottom: 0px;
+	 left: 0px;
+	}
+  }
